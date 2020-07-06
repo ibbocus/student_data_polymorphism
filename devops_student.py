@@ -1,4 +1,4 @@
-from student_data_polymorphism import Student
+from student_data import Student
 
 
 class Devops(Student):
@@ -9,9 +9,10 @@ class Devops(Student):
 
     def roll_call(self):
         print(f"I am a {self.stream} Student")
+        # This is the same method as the parent class, however it has slightly changed functionality
 
 
-
+# Code demo
 s = Student("Ib", "Bocus")
 d = Devops("Ib", "Bocus", "Devops")
 
